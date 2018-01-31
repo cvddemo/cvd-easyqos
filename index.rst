@@ -6,7 +6,9 @@ APIC-EM Release 1.6
 
 December, 2017
 
+##################
 Chapter 1: Solution Overview
+##################
 
 Customer Challenges
 

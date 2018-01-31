@@ -447,7 +447,9 @@ provisioned with a minimal bandwidth queue, which is the first to starve
 should network congestion occur. Example traffic includes Netflix,
 YouTube, Xbox Live/360 Movies, iTunes, BitTorrent, etc.
 
+##################
 Chapter 3: Tactical QoS Policy
+##################
 
 Translating QoS Strategy into Tactical Designs
 
@@ -682,7 +684,9 @@ assigned to this queue has no implied “good-faith” service guarantee or
 expectation. Therefore, there is little to gain by adding this feature
 and it may even be wasteful of router CPU resources.
 
+##################
 Chapter 4: APIC-EM and the EasyQoS Application
+##################
 
 The Application Policy Infrastructure Controller—Enterprise Module
 (APIC-EM) is Cisco’s enterprise SDN controller. EasyQoS is one of
@@ -2379,7 +2383,9 @@ remove the entry for the Dynamic QoS flow. The ***Dynamic QoS Design***
 chapter of this document has further details regarding the operation of
 Dynamic QoS.
 
+##################
 Chapter 5: EasyQoS Monitoring (Beta)
+##################
 
 For APIC-EM release 1.6, EasyQoS Monitoring is a Beta feature. The
 Monitoring feature provides the ability for the network operator to
@@ -2734,7 +2740,9 @@ The Pkts Output and Total Drops counters are highlighted in bold for the
 BROADCAST traffic-class in the sample output from the “show policy-map
 interface <interface> out” command above.
 
+##################
 Chapter 6: WAN and Branch Static QoS Design
+##################
 
 Within the EasyQoS solution, different network devices implement the
 ingress classification & marking QoS policies to the best of their
@@ -4801,7 +4809,9 @@ The Restore feature will not remove any “plim qos” commands on the ASR
 1000 Series platforms discussed in the ***ASR-1000 Series Specific
 Interface-Level Commands*** section above.
 
+##################
 Chapter 7: Service Provider Managed-Service WAN QoS Design
+##################
 
 Challenges
 
@@ -6613,7 +6623,9 @@ classified to one of the 11 new class-map entries that include the word
 application belongs. Therefore traffic from port-based Custom
 applications is now remarked back to its original DSCP marking.
 
+##################
 Chapter 8: Campus LAN Static QoS Design
+##################
 
 Within the EasyQoS solution, different network devices implement the QoS
 policy to the best of their abilities. With APIC-EM/EasyQoS release 1.3
@@ -7966,7 +7978,9 @@ any EasyQoS policy or not implement EasyQoS policy when Auto QoS is
 configured on the platform. Future versions of APIC-EM EasyQoS may
 remove Auto QoS configuration as well.
 
+##################
 Chapter 9: Catalyst and Nexus Switch Platform Queuing Design
+##################
 
 The following sections discuss the ingress and/or egress queuing
 structures provisioned by EasyQoS to the various supported Catalyst and
@@ -15571,7 +15585,9 @@ only difference between the QoS policy pushed by APIC-EM for the M3
 modules and the F2e and F3 modules is that network-qos policy template
 does not need to be configured for the M3 modules.
 
+##################
 Chapter 10: WLAN QoS Design
+##################
 
 AireOS WLC QoS Design
 
@@ -16397,7 +16413,9 @@ in the figures below.
 
 |image119|
 
+##################
 Chapter 11: Dynamic Qos Design
+##################
 
 For the APIC-EM 1.6 release, Dynamic QoS is still a Beta application.
 

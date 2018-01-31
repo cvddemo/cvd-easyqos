@@ -13,7 +13,6 @@ Chapter 1: Solution Overview
 *********
 Customer Challenges
 *********
-
 Today there is a virtual explosion of rich media applications on the IP
 network. This explosion of content and media types, both managed and
 unmanaged, requires network architects to take a new look at their
@@ -54,8 +53,9 @@ is which applications are important to his/her business. End-to-end
 provisioning is done in minutes (vs. months), leveraging industry
 standards and Cisco Validated Designs (CVDs).
 
+*********
 Solution Description
-
+*********
 Cisco Application Policy Infrastructure Controller Enterprise Module
 (APIC-EM) is Cisco’s enterprise Software-Defined Networking (SDN)
 controller. APIC-EM provides the automation functionality within Cisco’s
@@ -178,8 +178,9 @@ the figure below.
 
 |image3|
 
+*********
 Where to Start?
-
+*********
 The first step may seem obvious and superfluous, but in actuality it is
 crucial: clearly define the business objectives that your QoS policies
 are to enable. These may include any or all of the following:
@@ -199,8 +200,9 @@ are to enable. These may include any or all of the following:
 
 -  Hardening the network infrastructure
 
+*********
 Determining Application Business-Relevancy
-
+*********
 With these goals in mind, network architects can clearly identify which
 applications are relevant to their business and which are not. There are
 three main states of business-relevance:
@@ -239,9 +241,11 @@ business-relevance one application at a time. However, the operator can
 override the default setting for business-relevance of any given
 application.
 
+*********
 Mapping Business-Relevance to QoS Treatments
-
+*********
 Cisco’s RFC 4594-Based Strategic QoS Model
+=========
 
 After applications have been defined as business-relevant (or
 otherwise), then the network architect must decide how to mark and treat
@@ -274,7 +278,7 @@ network architects to assign applications to the optimal
 traffic-classes; these are summarized in the following sections.
 
 QoS treatment for Business-Relevant Applications
-
+=========
 Business relevant application can be grouped into one of four main
 categories:
 
@@ -422,7 +426,7 @@ traffic-classes, only two types of traffic-classes are left to be
 provisioned—Default and Scavenger traffic-classes.
 
 QoS Treatment for Default-Business Relevance Applications
-
+=========
 Best Effort—This traffic class is the default class. The vast majority
 of applications will continue to default to this Best-Effort service
 class. As such, the default class should be adequately provisioned.
@@ -431,7 +435,7 @@ should be provisioned with a dedicated queue. It is recommended that you
 enable WRED on this class.
 
 QoS Treatment for Business-Irrelevant Applications
-
+=========
 Scavenger—This traffic class is intended for all applications that have
 been previously identified as business-irrelevant. These may include
 video applications that are consumer and/or entertainment-oriented. The

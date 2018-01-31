@@ -455,8 +455,9 @@ YouTube, Xbox Live/360 Movies, iTunes, BitTorrent, etc.
 Chapter 3: Tactical QoS Policy
 ##################
 
+*********
 Translating QoS Strategy into Tactical Designs
-
+*********
 To meet the demands of today's media-rich networks, administrators
 should articulate a QoS strategy that reflects their business intent.
 This strategy details which applications are business relevant and which
@@ -493,12 +494,14 @@ tactical design phase:
 -  Leverage QoS design best-practices to generate platform specific
    configurations that reflect the QoS strategy with maximum fidelity.
 
+*********
 QoS Design Best Practices
+*********
 
 The following sections discuss generic best practices for QoS design.
 
 Hardware vs. Software QoS Design
-
+=========
 Some Cisco routers, such as Cisco Integrated Services Routers (ISRs),
 perform QoS in software, which places incremental loads on the CPU. The
 actual incremental load depends on the numerous factors, including: the
@@ -529,7 +532,7 @@ branch), and as such the administrator would then have to apply the
 required classification and marking policies on the ISR router.
 
 Classification and Marking Best Practices
-
+=========
 When classifying and marking traffic, a recommended design best practice
 is to classify and mark applications as close to their sources as
 technically and administratively feasible. This principle promotes
@@ -563,7 +566,7 @@ critical, you should follow standards-based DSCP PHB markings to ensure
 interoperability and future expansion.
 
 Policing and Remarking Best Practices
-
+=========
 There is little reason to forward unwanted traffic only to police and
 drop it at a downstream node. Therefore, it is recommended that you
 police traffic flows as close to their sources as possible.
@@ -577,7 +580,7 @@ should be configured to drop AFx3 more aggressively than AFx2, which in
 turn should be dropped more aggressively than AFx1.
 
 Congestion Management (Queuing) Best Practices
-
+=========
 Business-critical applications require service guarantees regardless of
 network conditions. The only way to provide service guarantees is to
 enable queuing at any and every node that has the potential for
@@ -699,8 +702,9 @@ discuss how to access APIC-EM, declaratively express QoS policies within
 the EasyQoS application, and then deploy those QoS policies to groups of
 network infrastructure devices.
 
+**********
 Logging Into APIC-EM
-
+**********
 APIC-EM provides a web-based GUI for configuring and monitoring the base
 APIC-EM functionality as well as the applications that reside upon it.
 
@@ -756,8 +760,9 @@ provide functionality that is required for the EasyQoS application. The
 Path Trace application is briefly mentioned at the end of the ***APIC-EM
 and the EasyQoS Application*** chapter.
 
+**********
 Network Device Discovery
-
+**********
 In order to apply QoS Policies to network devices within the EasyQoS
 application, network devices must first be discovered, added the APIC-EM
 device inventory, and managed by APIC-EM. Hence, the network operator
@@ -835,8 +840,9 @@ example is shown in the figure below.
 The default setting of 25 minutes is also the minimum polling interval.
 The polling interval can be extended up once every 24 hours if desired.
 
+**********
 Device Inventory
-
+**********
 Only after network devices have been discovered will those devices be
 added the APIC-EM Device Inventory database and managed by APIC-EM.
 Clicking the Device Inventory icon within the expandable panel on
@@ -913,9 +919,12 @@ shown in the following figure.
 
 |image21|
 
+**********
 Host Inventory
+**********
 
 Cisco Device Endpoints
+=========
 
 APIC-EM also discovers certain Cisco hardware device endpoints which are
 then included within Static and Dynamic QoS policies provisioned to
@@ -982,8 +991,9 @@ controller (WLC) EasyQoS ingress classification & marking policy uses
 Cisco Application Visibility and Control (AVC) profiles, rather than
 Layer 2-4 ACLs.
 
+**********
 Topology
-
+**********
 After network infrastructure devices have been discovered, the network
 operator can view the network via the Topology page. The Topology page
 is accessed by clicking the Topology icon within the expandable panel on
@@ -1054,7 +1064,9 @@ role within the side window. The policy applied to Catalyst switches
 based upon their role is discussed in the ***Campus LAN Static QoS
 Design*** chapter.
 
+**********
 EasyQoS Application
+**********
 
 The Discovery, Device Inventory, Host Inventory, and Topology functions
 discussed in the previous sections are not part of the EasyQoS
@@ -1092,7 +1104,7 @@ is free to access the tabs in any order. Each of these tabs will be
 discussed in separate sections.
 
 Policy Scopes
-
+=========
 The network operator is by default automatically taken to the first
 tab—Policy Scopes—when clicking the EasyQoS application icon within the
 expandable panel on left-side of any APIC-EM page.
@@ -1157,7 +1169,7 @@ network devices have been moved into the policy scope(s), the network
 operator can click the Application Registry tab.
 
 Application Registry
-
+=========
 The second step in deploying QoS policy through EasyQoS is to access the
 Application Registry in order to select Favorite applications and to
 create Custom applications. The Application Registry serves as a common
@@ -1373,7 +1385,7 @@ application. Adding a Consumer is discussed in the ***Policies***
 section below.
 
 Advanced Settings
-
+=========
 With APIC-EM release 1.4, configuration of SP Profiles and Dynamic QoS
 was moved under the Advanced Settings tab. Additionally, a new feature,
 Bandwidth (BW) Profiles, was added. APIC-EM release 1.5 renamed
@@ -1727,7 +1739,7 @@ This is discussed in detail within the ***Service Provider
 Managed-Service WAN QoS Design*** chapter.
 
 Policies
-
+=========
 The next step to deploying QoS policy through EasyQoS is to access the
 Policies tab in order to create a policy under a scope.
 
@@ -2327,7 +2339,7 @@ higher. The network operator should re-apply policies to policy scopes
 in order to update these stale applications.
 
 Dynamic QoS
-
+=========
 For the APIC-EM 1.6 release, Dynamic QoS is still a Beta application
 within EasyQoS. In order to enable Dynamic QoS, the network operator
 must access the Advanced Settings tab and then click Dynamic QoS to

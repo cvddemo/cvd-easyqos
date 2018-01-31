@@ -10,7 +10,9 @@ December, 2017
 Chapter 1: Solution Overview
 ##################
 
+*********
 Customer Challenges
+*********
 
 Today there is a virtual explosion of rich media applications on the IP
 network. This explosion of content and media types, both managed and
@@ -156,9 +158,10 @@ In summary the following is the business value of the EasyQoS solution:
 -  The EasyQoS solution provides a declarative model that is
    business-intent driven, while abstracting away the
    platform/media/capability details.
-*********
+
+##################
 Chapter 2: Strategic QoS Policy
-*********
+##################
 
 Over the past several years there has been an evolution in how Cisco
 approaches the deployment of QoS within organizations—revolving around

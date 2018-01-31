@@ -10,9 +10,9 @@ December, 2017
 Chapter 1: Solution Overview
 ############################
 
-
+*******************
 Customer Challenges
--------------------
+*******************
 
 Today there is a virtual explosion of rich media applications on the IP
 network. This explosion of content and media types, both managed and
@@ -54,8 +54,9 @@ is which applications are important to his/her business. End-to-end
 provisioning is done in minutes (vs. months), leveraging industry
 standards and Cisco Validated Designs (CVDs).
 
+********************
 Solution Description
---------------------
+********************
 
 Cisco Application Policy Infrastructure Controller Enterprise Module
 (APIC-EM) is Cisco’s enterprise Software-Defined Networking (SDN)
